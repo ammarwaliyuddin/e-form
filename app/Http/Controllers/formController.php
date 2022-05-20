@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use PDF;
 
 class formController extends Controller
 {
@@ -55,4 +56,15 @@ class formController extends Controller
 
         dd($data);
     }
+    public function cetak_pdf()
+{
+	// $pegawai = Pegawai::all();
+ //return $pdf->download('laporan-pdf.pdf');
+//menjadi
+// return $pdf->stream();
+// return view('pdf');
+	$pdf = PDF::loadview('pdf',['pegawai'=>'am']);
+	// // return $pdf->download('laporan.pdf');
+    return $pdf->stream();
+}
 }

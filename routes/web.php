@@ -21,3 +21,4 @@ use App\Http\Controllers\formController;
 // Route::get('/', [formController::class, 'form']);
 Route::get('/', [formController::class, 'form']);
 Route::post('/form',[formController::class, 'postData'])->name('inputData');
+Route::get('/pegawai/cetak_pdf', [formController::class, 'cetak_pdf'])->name('cetak');

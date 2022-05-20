@@ -25,6 +25,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-sm-6 mt-4">
+                    <a href="{{route('cetak')}}" class="btn btn-primary" target="_blank">CETAK PDF</a>
                     <div class="card">
                         <img class="card-img-top" style="height: 300px" src="https://source.unsplash.com/random/150x100" alt="unplash">
                         <div class="card-body">
